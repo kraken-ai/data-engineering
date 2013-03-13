@@ -1,0 +1,11 @@
+<h1>FileUpload#new</h1>
+<br /><br />
+
+<%= form_tag({:action => :create}, :multipart => true) do %>
+  <% @datafile.errors.full_messages.each do |msg| %>
+    <p id="errors"><%= msg %></p>
+  <% end %>
+
+  <%= file_field_tag 'filename' %>
+  <%= submit_tag %>
+<% end %>

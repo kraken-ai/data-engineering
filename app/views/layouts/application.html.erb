@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LsChallenge</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% unless notice.nil? %> <p class="notice"><%= notice %></p> <% end %>
+<% unless alert.nil? %>  <p class="alert"><%= alert %></p> <% end %>
+
+<%= yield %>
+
+<br /><br />
+<%= link_to "View Total Sales", "/total_sales" %>
+<br /><br />
+<%= render "/shared/login_logout" %>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+== Basic app instructions.
+
+1. This app uses the embedded sqlite db, all you need to do is start it up with: rails server
+2. Your welcome to signup via devise, or you can login with: test@user.com / password
+3. Didn't prep the app to be prod ready, since it's a demo.
+4. You can rake db:setup if you like to clear things out, and sign-up again if you like.
+5. There's an example spreadsheet in /test/data/example_input.tab
+
